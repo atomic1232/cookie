@@ -16884,6 +16884,7 @@ window.onload=function()
 								if (firstLaunch) Game.showLangSelection(true);
 
 								// cyrillbrito: Load Cookie Monster mod
+								Game.LoadMod('https://klattmose.github.io/CookieClicker/CCSE-POCs/TimerWidget.js');
 								Game.LoadMod('mods/Fortune cookie');
 								Game.LoadMod('mods/CookieMonster.js');
 							});
