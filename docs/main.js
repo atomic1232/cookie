@@ -16884,14 +16884,18 @@ window.onload=function()
 								if (firstLaunch) Game.showLangSelection(true);
 
 								// cyrillbrito: Load Cookie Monster mod
-								Game.LoadMod('https://klattmose.github.io/CookieClicker/CCSE-POCs/TimerWidget.js');
-								Game.LoadMod('mods/Fortune cookie');
-								function delay(time) {
-  return new Promise(resolve => setTimeout(resolve, time));
-}
+								// Load CCSE first
+Game.LoadMod('https://klattmose.github.io/CookieClicker/CCSE.js');
 
-delay(1000).then(() => console.log('Ran after 1 second'));
-								Game.LoadMod('mods/CookieMonster.js');
+// Load Fortune Cookie after CCSE with a delay to ensure CCSE loads first
+setTimeout(() => {
+    Game.LoadMod('mods/FortuneCookie.js'); // Ensure correct filename and extension
+}, 2000); // 2-second delay
+
+// Load Cookie Monster after Fortune Cookie with another delay
+setTimeout(() => {
+    Game.LoadMod('mods/CookieMonster.js');
+}, 4000); // 4-second delay to allow previous mods to load
 							});
 						}
 					}
