@@ -16889,7 +16889,7 @@ Game.LoadMod('https://klattmose.github.io/CookieClicker/CCSE.js');
 
 // Load Fortune Cookie after CCSE with a delay to ensure CCSE loads first
 setTimeout(() => {
-    Game.LoadMod('mods/FortuneCookie.js'); // Ensure correct filename and extension
+    Game.LoadMod('mods/fortuneCookie.js'); // Ensure correct filename and extension
 }, 2000); // 2-second delay
 
 // Load Cookie Monster after Fortune Cookie with another delay
