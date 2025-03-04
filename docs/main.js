@@ -16886,6 +16886,11 @@ window.onload=function()
 								// cyrillbrito: Load Cookie Monster mod
 								Game.LoadMod('https://klattmose.github.io/CookieClicker/CCSE-POCs/TimerWidget.js');
 								Game.LoadMod('mods/Fortune cookie');
+								function delay(time) {
+  return new Promise(resolve => setTimeout(resolve, time));
+}
+
+delay(1000).then(() => console.log('Ran after 1 second'));
 								Game.LoadMod('mods/CookieMonster.js');
 							});
 						}
