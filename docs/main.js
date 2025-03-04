@@ -16884,22 +16884,20 @@ window.onload=function()
 								if (firstLaunch) Game.showLangSelection(true);
 
 								// cyrillbrito: Load Cookie Monster mod
-								<script src="https://klattmose.github.io/CookieClicker/CCSE.js"></script>
+								<script src="https://klattmose.github.io/CookieClicker/CCSE.js"></script><!-- Load CCSE -->
+src="https://klattmose.github.io/CookieClicker/CCSE.js"></script>
 
-<script>
-    // Wait for CCSE to load before loading Fortune Cookie
+    // Ensure Fortune Cookie loads only after CCSE is ready
     setTimeout(() => {
-        Game.LoadMod('https://klattmose.github.io/CookieClicker/FortuneCookie.js?v=2.8');
-    }, 3000); // 3-second delay
-</script>
+        Game.LoadMod('https://klattmose.github.io/CookieClicker/FortuneCookie.js');
+    }, 3000); // Delays Fortune Cookie loading
 
-<script>
-    // Wait for both CCSE and Fortune Cookie to load before loading Cookie Monster
+    // Load Cookie Monster after CCSE and Fortune Cookie
     setTimeout(() => {
-        // Ensure the path to Cookie Monster is correct
         Game.LoadMod('mods/CookieMonster.js');
-    }, 6000); // 6-second delay
+    }, 6000); // Delays Cookie Monster loading
 </script>
+
 
 							});
 						}
