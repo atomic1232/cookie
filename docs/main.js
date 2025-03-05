@@ -16891,7 +16891,8 @@ Game.LoadMod('https://klattmose.github.io/CookieClicker/CCSE.js');
 setTimeout(() => {
     Game.LoadMod('mods/fortunecookie.js'); // Ensure correct filename and extension
 }, 2000); // 2-second delay
- Game.LoadMod('https://klattmose.github.io/CookieClicker/KlattmoseUtilities.js?v=2.16');\
+ Game.LoadMod('https://klattmose.github.io/CookieClicker/KlattmoseUtilities.js?v=2.16');
+Game.LoadMod('https://klattmose.github.io/CookieClicker/Horticookie.js?v=4.2')
 Game.LoadMod('https://staticvariablejames.github.io/InsugarTrading/InsugarTrading.js');
 // Load Cookie Monster after Fortune Cookie with another delay
 setTimeout(() => {
