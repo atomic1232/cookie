@@ -16891,6 +16891,7 @@ Game.LoadMod('https://klattmose.github.io/CookieClicker/CCSE.js');
 setTimeout(() => {
     Game.LoadMod('mods/fortunecookie.js'); // Ensure correct filename and extension
 }, 2000); // 2-second delay
+Game.LoadMod('https://staticvariablejames.github.io/InsugarTrading/InsugarTrading.js');
 
 // Load Cookie Monster after Fortune Cookie with another delay
 setTimeout(() => {
