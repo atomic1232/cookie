@@ -565,4 +565,4 @@ if(!FortuneCookie.isLoaded){
 		if(!CCSE.postLoadHooks) CCSE.postLoadHooks = [];
 		CCSE.postLoadHooks.push(FortuneCookie.launch);
 	}
-}
+} 
